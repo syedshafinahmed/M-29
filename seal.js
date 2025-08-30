@@ -6,8 +6,8 @@ const employee = {
     experience: 2
 }
 
-// can not modify, add or delete
-Object.freeze(employee);
+// only modifies, can not add or delete
+Object.seal(employee);
 delete employee.experience;
 employee.salary = employee.salary + 5000;
 employee.location = "Dhaka";
